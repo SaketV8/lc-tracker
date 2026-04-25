@@ -851,3 +851,11 @@ a {
     grid-column: span 2;
   }
 }
+
+.modal-hint code {
+  white-space: pre-wrap; 
+  word-break: break-all; 
+  overflow-wrap: break-word; 
+  display: inline-block;
+  max-width: 100%;
+}

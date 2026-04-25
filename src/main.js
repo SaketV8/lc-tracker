@@ -74,7 +74,10 @@ async function loadData(providedUrl = null) {
       processData();
       hideModal();
       // document.getElementById("footer-url").textContent = truncate(url, 60);
-      toast(`Loaded ${allQuestions.length} questions from ${truncate(url, 60)}`, 'success');
+      toast(
+        `Loaded ${allQuestions.length} questions from ${truncate(url, 60)}`,
+        "success",
+      );
       try {
         document.getElementById("data-source-badge").textContent = new URL(
           url,
@@ -310,9 +313,9 @@ document.getElementById("company-toggle").addEventListener("click", () => {
   toggleCompanyPanel();
 });
 
-document.getElementById("close-info-btn").addEventListener("click", hideInfoModal);
-
 document.getElementById("about").addEventListener("click", showInfoModal);
+
+document.getElementById("close-about-btn").addEventListener("click", hideInfoModal);
 
 document.addEventListener("click", (e) => {
   // handle expand button click toggleQCompanies
