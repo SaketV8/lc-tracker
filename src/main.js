@@ -12,6 +12,7 @@ if (savedUrl) {
   document.addEventListener("DOMContentLoaded", showModal);
 }
 
+
 function debounce(func, timeout = 200) {
   let timer;
   return (...args) => {
