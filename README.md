@@ -16,7 +16,7 @@ The urge to build a project on the weekend is at its peak when there is an exam 
 - **Build Tool:** [Vite](https://vite.dev/) (Used for lightning-fast bundling and production minification)
 - **Styling:** Custom CSS3 (Modular & Responsive)
 - **Data Source:** Company-wise mappings sourced from [kash04x/BetterLC](https://github.com/kash04x/BetterLC)
-- **Hosting:** [Cloudflare](https://cloudflare.com/)
+- **Hosting & Analytics:** [Cloudflare](https://cloudflare.com/)
 
 ## ✨ Key Features
 
