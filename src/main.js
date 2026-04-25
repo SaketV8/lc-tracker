@@ -152,7 +152,8 @@ function renderChips() {
   const toggle = document.getElementById("company-toggle");
   const summary = document.getElementById("cft-summary");
   if (selectedCompanies.size > 0) {
-    badge.textContent = `${selectedCompanies.size} selected`;
+    // badge.textContent = `${selectedCompanies.size} selected`;
+    badge.textContent = `${selectedCompanies.size}`;
     badge.classList.add("show");
     toggle.classList.add("has-active");
     summary.textContent =

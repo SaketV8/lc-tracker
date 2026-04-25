@@ -321,7 +321,7 @@ a {
   transform: rotate(90deg);
 }
 
-.company-chips-wrap {
+/* .company-chips-wrap {
   overflow: hidden;
   max-height: 0;
   transition:
@@ -337,7 +337,49 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
+} */
+
+.company-chips-wrap {
+  /* Ensure the base state is hidden/collapsed */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
 }
+
+.company-chips-wrap.open {
+  max-height: 420px;
+  padding-top: 0.65rem;
+  /* Key changes for scrollability */
+  overflow-y: auto; 
+  scrollbar-gutter: stable; /* Prevents layout shifting */
+}
+
+.company-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  /* Add a little padding on the right so chips don't touch the scrollbar */
+  padding-right: 0.5rem; 
+}
+
+/* modern scrollbar to match your UI */
+.company-chips-wrap::-webkit-scrollbar {
+  width: 6px;
+}
+
+.company-chips-wrap::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.company-chips-wrap::-webkit-scrollbar-thumb {
+  background: var(--text-4); /* Or your preferred border/muted color */
+  border-radius: 10px;
+}
+
+.company-chips-wrap::-webkit-scrollbar-thumb:hover {
+  background: var(--accent); /* Or your primary color */
+}
+
 .chip {
   font-family: "JetBrains Mono", monospace;
   font-size: 0.62rem;
