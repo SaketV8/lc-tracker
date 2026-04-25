@@ -38,9 +38,11 @@ This project serves as a testament to the "Productive Procrastination" phenomeno
 
 ### 👨‍💻 About
 
-- **Design & Built by:** Saket Maurya. Co-Written by -  Gemini & Claude
+- **Design & Built by:** Saket Maurya. Co-Written by - Gemini & Claude
 - **Deployment:** Powered by the Cloudflare Edge network.
 
----
+### 🌼 Todo
+- [ ] Add virtual List to optimize the perfomance
+- [ ] Search filter for company Tag too
 
 _Built with ❤️ and a slight sense of academic dread._
