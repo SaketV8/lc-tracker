@@ -4,13 +4,37 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>lc-tracker</title>
+    <meta
+      name="description"
+      content="A collection of company wise leetcode problems"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lc-tracker.pages.dev/" />
+    <meta property="og:title" content="lc-tracker" />
+    <meta
+      property="og:description"
+      content="A collection of company wise leetcode problems."
+    />
+    <meta property="og:image" content="" />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://lc-tracker.pages.dev/" />
+    <meta property="twitter:title" content="lc-tracker" />
+    <meta
+      property="twitter:description"
+      content="A collection of company wise leetcode problems"
+    />
+    <meta property="twitter:image" content="src/assets/og-image.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=DM+Sans:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
-    <title>lc-problems</title>
   </head>
   <body>
     <div class="modal-overlay" id="modal-container">
@@ -36,9 +60,12 @@
           The JSON should be an array of objects with <code>url</code>,
           <code>title</code>, and <code>companies</code> fields.
         </div>
-        <br/>
+        <br />
         <div class="modal-hint">
-          for latest data use this - <code style="color: #1d4ed8;">https://raw.githubusercontent.com/kash04x/BetterLC/refs/heads/main/resources/data.json</code>
+          for latest data use this -
+          <code style="color: #1d4ed8"
+            >https://raw.githubusercontent.com/kash04x/BetterLC/refs/heads/main/resources/data.json</code
+          >
         </div>
         <div class="modal-error" id="modal-error"></div>
       </div>
@@ -56,9 +83,7 @@
         <div class="modal-logo">
           lc<span class="dot">.</span>tracker
           <!-- <span class="badge" style="font-size: 0.5rem; vertical-align: middle" -->
-          <span class="badge" style="vertical-align: middle"
-            >About</span
-          >
+          <span class="badge" style="vertical-align: middle">About</span>
         </div>
 
         <div class="modal-sub" style="text-align: left; margin-top: 1.5rem">
@@ -70,12 +95,20 @@
               href="https://github.com/kash04x/BetterLC"
               target="_blank"
               style="color: #1d4ed8; text-decoration: none"
-              >kash04x/BetterLC</a
+              >kash04x/BetterLC  ↗</a
             >.
           </p>
-          <br/>
+          <br />
           <p style="font-size: 0.65rem; color: var(--text-4); margin-top: 1rem">
-            Designed & Developed by Saket. Co-written with some help from Gemini & Claude.
+            Designed & Developed by
+            <a
+              href="https://saket.xmaurya.workers.dev/"
+              target="_blank"
+              style="color: #1d4ed8; text-decoration: none"
+              >Saket ↗</a
+            >
+            <!-- Saket -->
+            . Co-written with some help from Gemini & Claude.
           </p>
         </div>
 
@@ -84,10 +117,19 @@
             href="https://github.com/SaketV8/lc-tracker"
             target="_blank"
             class="btn"
-            style="text-decoration: none; flex: 1; align-items: center; justify-content: center;"
+            style="
+              text-decoration: none;
+              flex: 1;
+              align-items: center;
+              justify-content: center;
+            "
             >GitHub Repo ↗</a
           >
-          <button class="btn primary" id="close-about-btn" style="flex: 1; align-items: center; justify-content: center;">
+          <button
+            class="btn primary"
+            id="close-about-btn"
+            style="flex: 1; align-items: center; justify-content: center"
+          >
             Close
           </button>
         </div>
@@ -202,11 +244,7 @@
         <!-- <span id="footer-url" style="color: var(--text-4)">—</span> -->
         <span
           id="about"
-          style="
-            color: var(--text-4);
-            letter-spacing: 0.06em;
-            cursor: pointer;
-          "
+          style="color: var(--text-4); letter-spacing: 0.06em; cursor: pointer"
           >about</span
         >
       </footer>
